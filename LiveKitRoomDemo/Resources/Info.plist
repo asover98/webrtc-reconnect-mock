@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NSCameraUsageDescription</key>
+	<string>LiveKitRoomDemo needs the camera for the Cloud room interview demo.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>LiveKitRoomDemo needs the microphone for the Cloud room interview demo.</string>
+	<key>NSLocalNetworkUsageDescription</key>
+	<string>LiveKitRoomDemo may use the local network while connecting to LiveKit.</string>
+</dict>
+</plist>

@@ -1,0 +1,27 @@
+{
+  "snapshot": {
+    "path_satisfied": true,
+    "is_expensive": true,
+    "is_constrained": true,
+    "rtt_ms": 380,
+    "loss_percent": 8.5,
+    "estimated_bandwidth_kbps": 180
+  },
+  "recorded_tool_call": {
+    "name": "apply_media_knobs",
+    "arguments": {
+      "level": 2,
+      "prefer_audio": true,
+      "pause_video_send": true,
+      "pause_video_recv": false,
+      "reason": "high_rtt_and_loss_protect_audio"
+    }
+  },
+  "deterministic": {
+    "level": 2,
+    "prefer_audio": true,
+    "pause_video_send": true,
+    "pause_video_recv": false,
+    "reason": "protect_audio"
+  }
+}

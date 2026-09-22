@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NSCameraUsageDescription</key>
+	<string>Camera access is required for the WebRTC local video preview in this reconnect research mock.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Microphone access is required for WebRTC audio in this reconnect research mock.</string>
+	<key>NSLocalNetworkUsageDescription</key>
+	<string>Local network access may be used for WebRTC peer discovery during reconnect experiments.</string>
+	<key>NSBonjourServices</key>
+	<array>
+		<string>_rtc._udp</string>
+		<string>_rtc._tcp</string>
+	</array>
+</dict>
+</plist>

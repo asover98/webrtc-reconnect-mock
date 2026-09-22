@@ -1,0 +1,17 @@
+# Secrets / minted tokens (never commit API secret or live JWTs)
+secrets/
+LiveKitRoomDemo/Resources/Tokens.plist
+
+# Xcode / SPM
+DerivedData/
+*.xcuserstate
+xcuserdata/
+.swiftpm/
+**/Package.resolved
+
+# OS
+.DS_Store
+.env
+llm-demo/.env
+**/GROK_API_KEY*
+llm-demo/.venv/

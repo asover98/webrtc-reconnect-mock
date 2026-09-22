@@ -1,0 +1,604 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03BC5BC2792B3DD08FC1A47E /* Tokens.plist in Resources */ = {isa = PBXBuildFile; fileRef = 41ED130C50B52BAC9E654852 /* Tokens.plist */; };
+		0E3FF55A812D2E5DB3FA41B1 /* LiveKitRoomDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6DA4E63D3684338200A9D8 /* LiveKitRoomDemoApp.swift */; };
+		23FCFFCA5AA45CF6EF10A685 /* TileStateMerger.swift in Sources */ = {isa = PBXBuildFile; fileRef = A312E324D2689B0430B0C3EF /* TileStateMerger.swift */; };
+		2CFAEC6E954521AC75ECFC34 /* WebRTCClientMediaKnobApplier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67F1FAB2F8AA08920D724F0 /* WebRTCClientMediaKnobApplier.swift */; };
+		347029AE11A17D4EA53899B0 /* StatusLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC45ED178C9B3A0B86CC42F /* StatusLog.swift */; };
+		4888F2E7B73F4DDA9F914BFA /* NetworkScenarioAgent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BFDE94381BC488B91A8ED6 /* NetworkScenarioAgent.swift */; };
+		4A4DEBF3514F623BE53F95EB /* NetworkPathMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C95467DA3E8B7D1077E4E5 /* NetworkPathMonitor.swift */; };
+		4E5C63F125CB7AD0DDCB6540 /* AgentTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5759B70065768D027B983F51 /* AgentTools.swift */; };
+		6B641F653613ADB15657C8D8 /* AnalyticsAgent.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF8174B711CDD54D0565EA7 /* AnalyticsAgent.swift */; };
+		8B0E56A8343ABCD6AD5AF38F /* LocalPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D536B35A91B00DFC377D205 /* LocalPreviewView.swift */; };
+		8C67BAF8D61E69CE8A7860C2 /* WebRTCReconnectMockApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601C6356AE0C775DF8ADD988 /* WebRTCReconnectMockApp.swift */; };
+		8C7DE1F8D2D352305DCC6346 /* LayoutAdaptivityAgent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDA1955066EBDD06AC52279 /* LayoutAdaptivityAgent.swift */; };
+		8EEDC42C55882688979AB4A0 /* TestScenarioSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F36CE0484C55FEC0F19D533 /* TestScenarioSupport.swift */; };
+		944B012F379DC9CF3DBD7C61 /* SignalingClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A4B79773EE9AC74A60A9D0 /* SignalingClient.swift */; };
+		9610906A67AE9B660BF6D37D /* ConferenceUIEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F867D758B528927FA1E5860 /* ConferenceUIEvent.swift */; };
+		975AFCCD4FC4193C498DCEB6 /* PeerConnectionDelegateBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417480B101632A94922CACEE /* PeerConnectionDelegateBridge.swift */; };
+		A2C956D87BC72A66F770A482 /* TileRosterSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E594EB6878C96994369BEE2 /* TileRosterSnapshot.swift */; };
+		ADD58254701028BAFF7E321F /* AgentOrchestrator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E78C9FCC63249E68579ACA6 /* AgentOrchestrator.swift */; };
+		B9052F3595740484C5D60D14 /* WebRTCClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55CE6BA88A5D2770B084658 /* WebRTCClient.swift */; };
+		D5137C78898FF63FBA3AD224 /* LiveKit in Frameworks */ = {isa = PBXBuildFile; productRef = 7BBA63730A31F20B39D275C5 /* LiveKit */; };
+		E234BCDEB114A42536E6891C /* StatsCollector.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FE03F6E787F868B2BD3224 /* StatsCollector.swift */; };
+		EE58727C4025780D3AA21855 /* ShareSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6177CC16E9A17F43DD2BB471 /* ShareSheet.swift */; };
+		F3DE80FAC867FCA73BFDE239 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4F2D5BAB78EEB867DE901E /* ContentView.swift */; };
+		F58AC1E7C211D17081F36F47 /* LiveKitWebRTC in Frameworks */ = {isa = PBXBuildFile; productRef = A28A01DC9268131E8B440888 /* LiveKitWebRTC */; };
+		F5961D38CC38467A402C705A /* RoomDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7182EAE55099F77ECA4236DF /* RoomDemoView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1B4F2D5BAB78EEB867DE901E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1E594EB6878C96994369BEE2 /* TileRosterSnapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileRosterSnapshot.swift; sourceTree = "<group>"; };
+		1E78C9FCC63249E68579ACA6 /* AgentOrchestrator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentOrchestrator.swift; sourceTree = "<group>"; };
+		2F867D758B528927FA1E5860 /* ConferenceUIEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConferenceUIEvent.swift; sourceTree = "<group>"; };
+		3F36CE0484C55FEC0F19D533 /* TestScenarioSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestScenarioSupport.swift; sourceTree = "<group>"; };
+		417480B101632A94922CACEE /* PeerConnectionDelegateBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeerConnectionDelegateBridge.swift; sourceTree = "<group>"; };
+		41ED130C50B52BAC9E654852 /* Tokens.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Tokens.plist; sourceTree = "<group>"; };
+		5759B70065768D027B983F51 /* AgentTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentTools.swift; sourceTree = "<group>"; };
+		601C6356AE0C775DF8ADD988 /* WebRTCReconnectMockApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebRTCReconnectMockApp.swift; sourceTree = "<group>"; };
+		6177CC16E9A17F43DD2BB471 /* ShareSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareSheet.swift; sourceTree = "<group>"; };
+		7182EAE55099F77ECA4236DF /* RoomDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomDemoView.swift; sourceTree = "<group>"; };
+		8D536B35A91B00DFC377D205 /* LocalPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalPreviewView.swift; sourceTree = "<group>"; };
+		8FDA1955066EBDD06AC52279 /* LayoutAdaptivityAgent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutAdaptivityAgent.swift; sourceTree = "<group>"; };
+		93BFDE94381BC488B91A8ED6 /* NetworkScenarioAgent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkScenarioAgent.swift; sourceTree = "<group>"; };
+		9B72429EA51BD9EDB9A5A969 /* LiveKitRoomDemo.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = LiveKitRoomDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A312E324D2689B0430B0C3EF /* TileStateMerger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileStateMerger.swift; sourceTree = "<group>"; };
+		B0FE03F6E787F868B2BD3224 /* StatsCollector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsCollector.swift; sourceTree = "<group>"; };
+		DC6DA4E63D3684338200A9D8 /* LiveKitRoomDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveKitRoomDemoApp.swift; sourceTree = "<group>"; };
+		DDC45ED178C9B3A0B86CC42F /* StatusLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusLog.swift; sourceTree = "<group>"; };
+		E2C95467DA3E8B7D1077E4E5 /* NetworkPathMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkPathMonitor.swift; sourceTree = "<group>"; };
+		E55CE6BA88A5D2770B084658 /* WebRTCClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebRTCClient.swift; sourceTree = "<group>"; };
+		E67F1FAB2F8AA08920D724F0 /* WebRTCClientMediaKnobApplier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebRTCClientMediaKnobApplier.swift; sourceTree = "<group>"; };
+		EBF8174B711CDD54D0565EA7 /* AnalyticsAgent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsAgent.swift; sourceTree = "<group>"; };
+		EC1F32B70A6C6CF4C5186DCF /* WebRTCReconnectMock.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = WebRTCReconnectMock.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3A4B79773EE9AC74A60A9D0 /* SignalingClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalingClient.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A1BE3B85EE302282B6996422 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F58AC1E7C211D17081F36F47 /* LiveKitWebRTC in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C26B55E71E086D9AD0736D39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5137C78898FF63FBA3AD224 /* LiveKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04C6C9125D9D6144A6566651 /* LiveKitRoomDemo */ = {
+			isa = PBXGroup;
+			children = (
+				5C48A56BD6ED558B698E9D2C /* Resources */,
+				2A184D2FE20F356A9828E9EB /* Sources */,
+			);
+			path = LiveKitRoomDemo;
+			sourceTree = "<group>";
+		};
+		2A184D2FE20F356A9828E9EB /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				DC6DA4E63D3684338200A9D8 /* LiveKitRoomDemoApp.swift */,
+				7182EAE55099F77ECA4236DF /* RoomDemoView.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		5A1F49EB2A823BF2D2C42BF1 /* AgentOrchestration */ = {
+			isa = PBXGroup;
+			children = (
+				1E78C9FCC63249E68579ACA6 /* AgentOrchestrator.swift */,
+				5759B70065768D027B983F51 /* AgentTools.swift */,
+				EBF8174B711CDD54D0565EA7 /* AnalyticsAgent.swift */,
+				8FDA1955066EBDD06AC52279 /* LayoutAdaptivityAgent.swift */,
+				93BFDE94381BC488B91A8ED6 /* NetworkScenarioAgent.swift */,
+				3F36CE0484C55FEC0F19D533 /* TestScenarioSupport.swift */,
+				E67F1FAB2F8AA08920D724F0 /* WebRTCClientMediaKnobApplier.swift */,
+			);
+			path = AgentOrchestration;
+			sourceTree = "<group>";
+		};
+		5C48A56BD6ED558B698E9D2C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				41ED130C50B52BAC9E654852 /* Tokens.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		818C5C6E1187EBF9D6A8E0E1 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				5A1F49EB2A823BF2D2C42BF1 /* AgentOrchestration */,
+				A9A4B8101E1E2F58E780C9D8 /* UICoalescing */,
+				1B4F2D5BAB78EEB867DE901E /* ContentView.swift */,
+				8D536B35A91B00DFC377D205 /* LocalPreviewView.swift */,
+				E2C95467DA3E8B7D1077E4E5 /* NetworkPathMonitor.swift */,
+				417480B101632A94922CACEE /* PeerConnectionDelegateBridge.swift */,
+				6177CC16E9A17F43DD2BB471 /* ShareSheet.swift */,
+				F3A4B79773EE9AC74A60A9D0 /* SignalingClient.swift */,
+				B0FE03F6E787F868B2BD3224 /* StatsCollector.swift */,
+				DDC45ED178C9B3A0B86CC42F /* StatusLog.swift */,
+				E55CE6BA88A5D2770B084658 /* WebRTCClient.swift */,
+				601C6356AE0C775DF8ADD988 /* WebRTCReconnectMockApp.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		8F915F57963B47D36E52C71A = {
+			isa = PBXGroup;
+			children = (
+				04C6C9125D9D6144A6566651 /* LiveKitRoomDemo */,
+				818C5C6E1187EBF9D6A8E0E1 /* Sources */,
+				E31C905FDDC1A85ACEF10033 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A9A4B8101E1E2F58E780C9D8 /* UICoalescing */ = {
+			isa = PBXGroup;
+			children = (
+				2F867D758B528927FA1E5860 /* ConferenceUIEvent.swift */,
+				1E594EB6878C96994369BEE2 /* TileRosterSnapshot.swift */,
+				A312E324D2689B0430B0C3EF /* TileStateMerger.swift */,
+			);
+			path = UICoalescing;
+			sourceTree = "<group>";
+		};
+		E31C905FDDC1A85ACEF10033 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9B72429EA51BD9EDB9A5A969 /* LiveKitRoomDemo.app */,
+				EC1F32B70A6C6CF4C5186DCF /* WebRTCReconnectMock.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A9A09FB6DB194E6B6470F19B /* WebRTCReconnectMock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 51D4ABC4CED9BA18DFA32B64 /* Build configuration list for PBXNativeTarget "WebRTCReconnectMock" */;
+			buildPhases = (
+				B9CB1D66B1C3570EACAE3587 /* Sources */,
+				A1BE3B85EE302282B6996422 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WebRTCReconnectMock;
+			packageProductDependencies = (
+				A28A01DC9268131E8B440888 /* LiveKitWebRTC */,
+			);
+			productName = WebRTCReconnectMock;
+			productReference = EC1F32B70A6C6CF4C5186DCF /* WebRTCReconnectMock.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AF05810B04EF881C1D1EBBEE /* LiveKitRoomDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5EECB2459AFC12ACB1C51514 /* Build configuration list for PBXNativeTarget "LiveKitRoomDemo" */;
+			buildPhases = (
+				6ABFF26BF633705E8CAE0F84 /* Sources */,
+				3647605B377CE7E8C374D674 /* Resources */,
+				C26B55E71E086D9AD0736D39 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LiveKitRoomDemo;
+			packageProductDependencies = (
+				7BBA63730A31F20B39D275C5 /* LiveKit */,
+			);
+			productName = LiveKitRoomDemo;
+			productReference = 9B72429EA51BD9EDB9A5A969 /* LiveKitRoomDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		69AF944541D2BC44C48D0840 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					A9A09FB6DB194E6B6470F19B = {
+						DevelopmentTeam = X6SLU75GM8;
+						ProvisioningStyle = Automatic;
+					};
+					AF05810B04EF881C1D1EBBEE = {
+						DevelopmentTeam = X6SLU75GM8;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = E78A8DC56937BA9B981BA01D /* Build configuration list for PBXProject "WebRTCReconnectMock" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 8F915F57963B47D36E52C71A;
+			packageReferences = (
+				5053E0729E8514C45B7F54B6 /* XCRemoteSwiftPackageReference "client-sdk-swift" */,
+				0B8E44674DF8A4B9E3524C05 /* XCRemoteSwiftPackageReference "webrtc-xcframework" */,
+			);
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AF05810B04EF881C1D1EBBEE /* LiveKitRoomDemo */,
+				A9A09FB6DB194E6B6470F19B /* WebRTCReconnectMock */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3647605B377CE7E8C374D674 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03BC5BC2792B3DD08FC1A47E /* Tokens.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6ABFF26BF633705E8CAE0F84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E3FF55A812D2E5DB3FA41B1 /* LiveKitRoomDemoApp.swift in Sources */,
+				F5961D38CC38467A402C705A /* RoomDemoView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9CB1D66B1C3570EACAE3587 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADD58254701028BAFF7E321F /* AgentOrchestrator.swift in Sources */,
+				4E5C63F125CB7AD0DDCB6540 /* AgentTools.swift in Sources */,
+				6B641F653613ADB15657C8D8 /* AnalyticsAgent.swift in Sources */,
+				9610906A67AE9B660BF6D37D /* ConferenceUIEvent.swift in Sources */,
+				F3DE80FAC867FCA73BFDE239 /* ContentView.swift in Sources */,
+				8C7DE1F8D2D352305DCC6346 /* LayoutAdaptivityAgent.swift in Sources */,
+				8B0E56A8343ABCD6AD5AF38F /* LocalPreviewView.swift in Sources */,
+				4A4DEBF3514F623BE53F95EB /* NetworkPathMonitor.swift in Sources */,
+				4888F2E7B73F4DDA9F914BFA /* NetworkScenarioAgent.swift in Sources */,
+				975AFCCD4FC4193C498DCEB6 /* PeerConnectionDelegateBridge.swift in Sources */,
+				EE58727C4025780D3AA21855 /* ShareSheet.swift in Sources */,
+				944B012F379DC9CF3DBD7C61 /* SignalingClient.swift in Sources */,
+				E234BCDEB114A42536E6891C /* StatsCollector.swift in Sources */,
+				347029AE11A17D4EA53899B0 /* StatusLog.swift in Sources */,
+				8EEDC42C55882688979AB4A0 /* TestScenarioSupport.swift in Sources */,
+				A2C956D87BC72A66F770A482 /* TileRosterSnapshot.swift in Sources */,
+				23FCFFCA5AA45CF6EF10A685 /* TileStateMerger.swift in Sources */,
+				B9052F3595740484C5D60D14 /* WebRTCClient.swift in Sources */,
+				2CFAEC6E954521AC75ECFC34 /* WebRTCClientMediaKnobApplier.swift in Sources */,
+				8C67BAF8D61E69CE8A7860C2 /* WebRTCReconnectMockApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3671306724E7E4F7A29BAEDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X6SLU75GM8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Resources/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "WebRTC Reconnect Mock";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aselder.WebRTCReconnectMock;
+				PRODUCT_NAME = WebRTCReconnectMock;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3C02421557B2AB5296B6FF2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X6SLU75GM8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LiveKitRoomDemo/Resources/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "LiveKit Room Demo";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aselder.LiveKitRoomDemo;
+				PRODUCT_NAME = LiveKitRoomDemo;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4431B663B370E28663BB2BFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X6SLU75GM8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LiveKitRoomDemo/Resources/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "LiveKit Room Demo";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aselder.LiveKitRoomDemo;
+				PRODUCT_NAME = LiveKitRoomDemo;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6060C0A06711B73C47376EE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X6SLU75GM8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Resources/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "WebRTC Reconnect Mock";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aselder.WebRTCReconnectMock;
+				PRODUCT_NAME = WebRTCReconnectMock;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		91F7BB308A3478DE5068BC61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		9A6F7B73E88C6B2D71E4A90D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		51D4ABC4CED9BA18DFA32B64 /* Build configuration list for PBXNativeTarget "WebRTCReconnectMock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6060C0A06711B73C47376EE2 /* Debug */,
+				3671306724E7E4F7A29BAEDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		5EECB2459AFC12ACB1C51514 /* Build configuration list for PBXNativeTarget "LiveKitRoomDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4431B663B370E28663BB2BFB /* Debug */,
+				3C02421557B2AB5296B6FF2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E78A8DC56937BA9B981BA01D /* Build configuration list for PBXProject "WebRTCReconnectMock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91F7BB308A3478DE5068BC61 /* Debug */,
+				9A6F7B73E88C6B2D71E4A90D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0B8E44674DF8A4B9E3524C05 /* XCRemoteSwiftPackageReference "webrtc-xcframework" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/livekit/webrtc-xcframework.git";
+			requirement = {
+				kind = exactVersion;
+				version = 150.7871.01;
+			};
+		};
+		5053E0729E8514C45B7F54B6 /* XCRemoteSwiftPackageReference "client-sdk-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/livekit/client-sdk-swift.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7BBA63730A31F20B39D275C5 /* LiveKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5053E0729E8514C45B7F54B6 /* XCRemoteSwiftPackageReference "client-sdk-swift" */;
+			productName = LiveKit;
+		};
+		A28A01DC9268131E8B440888 /* LiveKitWebRTC */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0B8E44674DF8A4B9E3524C05 /* XCRemoteSwiftPackageReference "webrtc-xcframework" */;
+			productName = LiveKitWebRTC;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 69AF944541D2BC44C48D0840 /* Project object */;
+}
